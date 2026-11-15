@@ -1,0 +1,254 @@
+/* Ink Kinetic PPT · Open-Source Modular Theme Presets (v2.1)
+ * Switch via <html data-theme="...">, URL query ?theme=..., press T, or call __inkDeck.setTheme(name).
+ * Includes 4 Oriental Ink themes + 2 Minimalist Classroom/Keynote presets (Dark Slate & Clean Light Paper).
+ */
+
+/* 1. Default: Obsidian Xuan Ink & Champagne Gold (玄墨鎏金) */
+:root,
+html[data-theme="obsidian-gold"] {
+  --ink-obsidian: #07080c;
+  --ink-deep: #0d1017;
+  --stage-bg: #07080c;
+  --ink-mist: rgba(10, 12, 18, 0.72);
+  --ink-vellum: rgba(15, 18, 25, 0.56);
+
+  --paper-ivory: #f2ece1;
+  --paper-warm: #d9cfbe;
+  --ink-muted: #989184;
+  --ink-subtle: rgba(242, 236, 225, 0.62);
+
+  --gold-bright: #f4d69c;
+  --gold-leaf: #cfa365;
+  --gold-dim: rgba(207, 163, 101, 0.28);
+  --gold-hairline: rgba(207, 163, 101, 0.18);
+
+  --cinnabar: #d84a36;
+  --cinnabar-glow: rgba(216, 74, 54, 0.48);
+
+  --font-display: "Source Han Serif SC Heavy", "Noto Serif SC", "STSong", "SimSun", serif;
+  --font-serif: "Noto Serif SC", "STSong", "SimSun", serif;
+  --font-sans: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --stage-cursor: crosshair;
+
+  --veil-left-grad: linear-gradient(90deg, rgba(7, 8, 12, 0.88) 0%, rgba(7, 8, 12, 0.58) 40%, rgba(7, 8, 12, 0.16) 72%, rgba(7, 8, 12, 0.36) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(7, 8, 12, 0.90) 0%, rgba(7, 8, 12, 0.64) 44%, rgba(7, 8, 12, 0.14) 74%, rgba(7, 8, 12, 0.25) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(7, 8, 12, 0.12) 0%, rgba(7, 8, 12, 0.08) 44%, rgba(7, 8, 12, 0.84) 76%, rgba(7, 8, 12, 0.95) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(7, 8, 12, 0.86) 0%, rgba(7, 8, 12, 0.56) 44%, rgba(7, 8, 12, 0.12) 76%, rgba(7, 8, 12, 0.35) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 74% 76% at 38% 50%, rgba(7, 8, 12, 0.80) 0%, rgba(7, 8, 12, 0.62) 56%, rgba(7, 8, 12, 0.54) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(7, 8, 12, 0.78) 0%, rgba(7, 8, 12, 0.36) 38%, rgba(7, 8, 12, 0.08) 66%, rgba(7, 8, 12, 0.45) 100%);
+
+  --hero-text-shadow: 0 18px 48px rgba(0, 0, 0, 0.65);
+  --surface-card: rgba(255, 255, 255, 0.03);
+  --chip-bg: rgba(207, 163, 101, 0.08);
+  --btn-bg: rgba(207, 163, 101, 0.1);
+  --btn-hover-fg: #07080c;
+  --btn-hover-glow: 0 0 24px rgba(244, 214, 156, 0.35);
+  --seal-bg: rgba(184, 59, 40, 0.09);
+  --seal-solid-fg: #f2ece1;
+
+  --hud-bg: rgba(10, 12, 17, 0.74);
+  --hud-border: var(--gold-hairline);
+  --hud-shadow: 0 10px 30px rgba(0, 0, 0, 0.42);
+  --hud-active-bg: rgba(207, 163, 101, 0.16);
+
+  --shard-shadow: rgba(0, 0, 0, 0.92);
+  --curtain-wing-shadow: rgba(0, 0, 0, 0.88);
+  --curtain-pleat-dark: rgba(0, 0, 0, 0.72);
+  --curtain-pleat-mid: rgba(10, 12, 18, 0.18);
+  --curtain-pleat-light: rgba(244, 214, 156, 0.16);
+  --curtain-seam-grad: linear-gradient(180deg, #fff2cc 0%, #cfa365 55%, rgba(207, 163, 101, 0.32) 100%);
+  --curtain-seam-glow: 0 0 18px rgba(244, 214, 156, 0.68);
+  --wind-glint-light: rgba(244, 214, 156, 0.16);
+  --wind-glint-dark: rgba(0, 0, 0, 0.44);
+}
+
+/* 2. Vermilion Palace & Amber Lacquer (故宫朱砂) */
+html[data-theme="vermilion-palace"] {
+  --ink-obsidian: #110708;
+  --ink-deep: #1b0b0d;
+  --stage-bg: #110708;
+  --ink-mist: rgba(24, 9, 11, 0.78);
+
+  --paper-ivory: #faf1e4;
+  --paper-warm: #e4cbb2;
+  --ink-muted: #ae9380;
+  --ink-subtle: rgba(250, 241, 228, 0.64);
+
+  --gold-bright: #ffd98a;
+  --gold-leaf: #d89b48;
+  --gold-dim: rgba(216, 155, 72, 0.30);
+  --gold-hairline: rgba(216, 155, 72, 0.22);
+
+  --cinnabar: #e2432e;
+  --cinnabar-glow: rgba(226, 67, 46, 0.52);
+
+  --veil-left-grad: linear-gradient(90deg, rgba(17, 7, 8, 0.90) 0%, rgba(17, 7, 8, 0.62) 42%, rgba(17, 7, 8, 0.18) 74%, rgba(17, 7, 8, 0.38) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(17, 7, 8, 0.92) 0%, rgba(17, 7, 8, 0.66) 44%, rgba(17, 7, 8, 0.18) 74%, rgba(17, 7, 8, 0.28) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(17, 7, 8, 0.14) 0%, rgba(17, 7, 8, 0.10) 44%, rgba(17, 7, 8, 0.85) 76%, rgba(17, 7, 8, 0.96) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(17, 7, 8, 0.88) 0%, rgba(17, 7, 8, 0.58) 44%, rgba(17, 7, 8, 0.16) 76%, rgba(17, 7, 8, 0.38) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 74% 76% at 38% 50%, rgba(17, 7, 8, 0.82) 0%, rgba(17, 7, 8, 0.64) 56%, rgba(17, 7, 8, 0.56) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(17, 7, 8, 0.80) 0%, rgba(17, 7, 8, 0.38) 38%, rgba(17, 7, 8, 0.10) 66%, rgba(17, 7, 8, 0.48) 100%);
+}
+
+/* 3. Jade Mist & Celadon Scroll (千里青绿) */
+html[data-theme="jade-mist"] {
+  --ink-obsidian: #061012;
+  --ink-deep: #0b1b1e;
+  --stage-bg: #061012;
+  --ink-mist: rgba(7, 20, 22, 0.76);
+
+  --paper-ivory: #ecf3ee;
+  --paper-warm: #c7ddd3;
+  --ink-muted: #7ea095;
+  --ink-subtle: rgba(236, 243, 238, 0.62);
+
+  --gold-bright: #9ce6c8;
+  --gold-leaf: #56b696;
+  --gold-dim: rgba(86, 182, 150, 0.30);
+  --gold-hairline: rgba(86, 182, 150, 0.20);
+
+  --cinnabar: #d8a656;
+  --cinnabar-glow: rgba(216, 166, 86, 0.45);
+
+  --veil-left-grad: linear-gradient(90deg, rgba(6, 16, 18, 0.90) 0%, rgba(6, 16, 18, 0.62) 42%, rgba(6, 16, 18, 0.18) 74%, rgba(6, 16, 18, 0.38) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(6, 16, 18, 0.92) 0%, rgba(6, 16, 18, 0.66) 44%, rgba(6, 16, 18, 0.18) 74%, rgba(6, 16, 18, 0.28) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(6, 16, 18, 0.14) 0%, rgba(6, 16, 18, 0.10) 44%, rgba(6, 16, 18, 0.85) 76%, rgba(6, 16, 18, 0.96) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(6, 16, 18, 0.88) 0%, rgba(6, 16, 18, 0.58) 44%, rgba(6, 16, 18, 0.16) 76%, rgba(6, 16, 18, 0.38) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 74% 76% at 38% 50%, rgba(6, 16, 18, 0.82) 0%, rgba(6, 16, 18, 0.64) 56%, rgba(6, 16, 18, 0.56) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(6, 16, 18, 0.80) 0%, rgba(6, 16, 18, 0.38) 38%, rgba(6, 16, 18, 0.10) 66%, rgba(6, 16, 18, 0.48) 100%);
+}
+
+/* 4. Cyber Noir & Neon Blade (赛博暗刃) */
+html[data-theme="cyber-noir"] {
+  --ink-obsidian: #050711;
+  --ink-deep: #0b1024;
+  --stage-bg: #050711;
+  --ink-mist: rgba(6, 10, 26, 0.78);
+
+  --paper-ivory: #edf4ff;
+  --paper-warm: #bfd0ec;
+  --ink-muted: #7b8fb5;
+  --ink-subtle: rgba(237, 244, 255, 0.64);
+
+  --gold-bright: #7af2ff;
+  --gold-leaf: #42b8e0;
+  --gold-dim: rgba(66, 184, 224, 0.32);
+  --gold-hairline: rgba(122, 242, 255, 0.22);
+
+  --cinnabar: #ff3c6a;
+  --cinnabar-glow: rgba(255, 60, 106, 0.52);
+
+  --veil-left-grad: linear-gradient(90deg, rgba(5, 7, 17, 0.90) 0%, rgba(5, 7, 17, 0.62) 42%, rgba(5, 7, 17, 0.18) 74%, rgba(5, 7, 17, 0.38) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(5, 7, 17, 0.92) 0%, rgba(5, 7, 17, 0.66) 44%, rgba(5, 7, 17, 0.18) 74%, rgba(5, 7, 17, 0.28) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(5, 7, 17, 0.14) 0%, rgba(5, 7, 17, 0.10) 44%, rgba(5, 7, 17, 0.86) 76%, rgba(5, 7, 17, 0.96) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(5, 7, 17, 0.88) 0%, rgba(5, 7, 17, 0.58) 44%, rgba(5, 7, 17, 0.16) 76%, rgba(5, 7, 17, 0.38) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 74% 76% at 38% 50%, rgba(5, 7, 17, 0.82) 0%, rgba(5, 7, 17, 0.64) 56%, rgba(5, 7, 17, 0.56) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(5, 7, 17, 0.80) 0%, rgba(5, 7, 17, 0.38) 38%, rgba(5, 7, 17, 0.10) 66%, rgba(5, 7, 17, 0.48) 100%);
+}
+
+/* 5. Apple Keynote Minimalist Dark Slate (极简深板讲堂风 · 无水墨装饰) */
+html[data-theme="keynote-slate"] {
+  --ink-obsidian: #0e131b;
+  --ink-deep: #151d29;
+  --stage-bg: radial-gradient(ellipse 86% 76% at 50% 14%, #1a2436 0%, #0e131b 66%, #090c12 100%);
+  --ink-mist: rgba(14, 19, 27, 0.82);
+  --ink-vellum: rgba(21, 29, 41, 0.66);
+
+  --paper-ivory: #f8fafc;
+  --paper-warm: #cbd5e1;
+  --ink-muted: #94a3b8;
+  --ink-subtle: rgba(248, 250, 252, 0.72);
+
+  --gold-bright: #7cc4ff;
+  --gold-leaf: #38bdf8;
+  --gold-dim: rgba(56, 189, 248, 0.28);
+  --gold-hairline: rgba(148, 163, 184, 0.22);
+
+  --cinnabar: #fb923c;
+  --cinnabar-glow: rgba(251, 146, 60, 0.34);
+
+  --font-display: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --stage-cursor: default;
+
+  --veil-left-grad: linear-gradient(90deg, rgba(14, 19, 27, 0.86) 0%, rgba(14, 19, 27, 0.56) 44%, rgba(14, 19, 27, 0.14) 76%, rgba(14, 19, 27, 0.28) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(14, 19, 27, 0.88) 0%, rgba(14, 19, 27, 0.60) 46%, rgba(14, 19, 27, 0.14) 76%, rgba(14, 19, 27, 0.22) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(14, 19, 27, 0.08) 0%, rgba(14, 19, 27, 0.04) 44%, rgba(14, 19, 27, 0.82) 76%, rgba(14, 19, 27, 0.94) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(14, 19, 27, 0.84) 0%, rgba(14, 19, 27, 0.50) 44%, rgba(14, 19, 27, 0.10) 76%, rgba(14, 19, 27, 0.24) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 76% 78% at 38% 50%, rgba(14, 19, 27, 0.78) 0%, rgba(14, 19, 27, 0.56) 56%, rgba(14, 19, 27, 0.44) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(14, 19, 27, 0.74) 0%, rgba(14, 19, 27, 0.30) 38%, rgba(14, 19, 27, 0.06) 66%, rgba(14, 19, 27, 0.38) 100%);
+
+  --hero-text-shadow: 0 12px 32px rgba(4, 8, 16, 0.45);
+  --surface-card: rgba(255, 255, 255, 0.045);
+  --chip-bg: rgba(56, 189, 248, 0.10);
+  --btn-bg: rgba(56, 189, 248, 0.10);
+  --btn-hover-fg: #09111c;
+  --btn-hover-glow: 0 0 22px rgba(56, 189, 248, 0.36);
+
+  --hud-bg: rgba(15, 22, 34, 0.82);
+  --hud-border: rgba(148, 163, 184, 0.24);
+  --hud-shadow: 0 10px 28px rgba(0, 0, 0, 0.42);
+  --hud-active-bg: rgba(56, 189, 248, 0.18);
+
+  --curtain-pleat-light: rgba(124, 196, 255, 0.14);
+  --curtain-seam-grad: linear-gradient(180deg, #e0f2fe 0%, #38bdf8 55%, rgba(56, 189, 248, 0.28) 100%);
+  --curtain-seam-glow: 0 0 16px rgba(56, 189, 248, 0.62);
+  --wind-glint-light: rgba(124, 196, 255, 0.15);
+}
+
+/* 6. Clean Classroom Paper Light Mode (极简暖白讲义风 · 教室强光清晰可读) */
+html[data-theme="clean-lecture"] {
+  --ink-obsidian: #f5f6f8;
+  --ink-deep: #eaeef4;
+  --stage-bg: radial-gradient(ellipse 90% 82% at 50% 10%, #ffffff 0%, #f5f6f8 68%, #ebeef4 100%);
+  --ink-mist: rgba(255, 255, 255, 0.88);
+  --ink-vellum: rgba(248, 250, 252, 0.82);
+
+  --paper-ivory: #111827;
+  --paper-warm: #374151;
+  --ink-muted: #6b7280;
+  --ink-subtle: rgba(17, 24, 39, 0.72);
+
+  --gold-bright: #1d4ed8;
+  --gold-leaf: #2563eb;
+  --gold-dim: rgba(37, 99, 235, 0.24);
+  --gold-hairline: rgba(15, 23, 42, 0.15);
+
+  --cinnabar: #c2410c;
+  --cinnabar-glow: rgba(194, 65, 12, 0.20);
+
+  --font-display: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --stage-cursor: default;
+
+  --veil-left-grad: linear-gradient(90deg, rgba(245, 246, 248, 0.93) 0%, rgba(245, 246, 248, 0.84) 44%, rgba(245, 246, 248, 0.36) 76%, rgba(245, 246, 248, 0.56) 100%);
+  --veil-right-grad: linear-gradient(270deg, rgba(245, 246, 248, 0.94) 0%, rgba(245, 246, 248, 0.86) 46%, rgba(245, 246, 248, 0.36) 76%, rgba(245, 246, 248, 0.48) 100%);
+  --veil-bottom-grad: linear-gradient(180deg, rgba(245, 246, 248, 0.16) 0%, rgba(245, 246, 248, 0.22) 42%, rgba(245, 246, 248, 0.90) 76%, rgba(245, 246, 248, 0.97) 100%);
+  --veil-top-grad: linear-gradient(180deg, rgba(245, 246, 248, 0.92) 0%, rgba(245, 246, 248, 0.82) 44%, rgba(245, 246, 248, 0.30) 76%, rgba(245, 246, 248, 0.46) 100%);
+  --veil-sanctuary-grad: radial-gradient(ellipse 76% 78% at 38% 50%, rgba(245, 246, 248, 0.92) 0%, rgba(245, 246, 248, 0.84) 56%, rgba(245, 246, 248, 0.72) 100%);
+  --veil-horizon-grad: linear-gradient(180deg, rgba(245, 246, 248, 0.90) 0%, rgba(245, 246, 248, 0.62) 38%, rgba(245, 246, 248, 0.18) 68%, rgba(245, 246, 248, 0.56) 100%);
+
+  --hero-text-shadow: none;
+  --surface-card: rgba(15, 23, 42, 0.035);
+  --chip-bg: rgba(37, 99, 235, 0.08);
+  --btn-bg: rgba(37, 99, 235, 0.07);
+  --btn-hover-fg: #ffffff;
+  --btn-hover-glow: 0 6px 20px rgba(37, 99, 235, 0.28);
+  --seal-bg: rgba(194, 65, 12, 0.08);
+  --seal-solid-fg: #ffffff;
+
+  --hud-bg: rgba(255, 255, 255, 0.90);
+  --hud-border: rgba(15, 23, 42, 0.16);
+  --hud-shadow: 0 10px 28px rgba(15, 23, 42, 0.14);
+  --hud-active-bg: rgba(37, 99, 235, 0.12);
+
+  --shard-shadow: rgba(15, 23, 42, 0.24);
+  --curtain-wing-shadow: rgba(15, 23, 42, 0.22);
+  --curtain-pleat-dark: rgba(15, 23, 42, 0.16);
+  --curtain-pleat-mid: rgba(255, 255, 255, 0.06);
+  --curtain-pleat-light: rgba(255, 255, 255, 0.50);
+  --curtain-seam-grad: linear-gradient(180deg, #93c5fd 0%, #2563eb 55%, rgba(37, 99, 235, 0.26) 100%);
+  --curtain-seam-glow: 0 0 14px rgba(37, 99, 235, 0.45);
+  --wind-glint-light: rgba(255, 255, 255, 0.48);
+  --wind-glint-dark: rgba(15, 23, 42, 0.12);
+}
